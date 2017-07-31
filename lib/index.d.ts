@@ -1,2 +1,2 @@
-import { EventManager } from './EventManager';
-export = EventManager;
+import { eventManager } from './EventManager';
+export = eventManager;

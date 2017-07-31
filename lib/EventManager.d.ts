@@ -1,5 +1,6 @@
-declare class EventManager {
-    static subscription(mapping: {
+import { EventEmitter } from 'es6-eventemitter/lib/esm';
+declare class EventManager extends EventEmitter {
+    subscription(mapping: {
         [key: string]: string;
     }): <T extends new (...args: any[]) => {}>(target: T) => {
         new (...args: any[]): {
@@ -8,5 +9,6 @@ declare class EventManager {
         };
     } & T;
 }
-export { EventManager };
-export default EventManager;
+declare const eventManager: EventManager;
+export { EventManager, eventManager };
+export default eventManager;

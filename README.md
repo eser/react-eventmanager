@@ -19,9 +19,9 @@ Execute `npm install react-eventmanager` to install react-eventmanager and its d
 ## Usage
 
 ```js
-import EventManager from 'react-eventmanager';
+import eventManager from 'react-eventmanager';
 
-@EventManager.subscription({
+@eventManager.subscription({
     sessionChanged: 'onSessionChanged'
 })
 class SampleContainer extends React.Component {
