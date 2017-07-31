@@ -25,7 +25,7 @@ import * as React from 'react';
 import eventManager from 'react-eventmanager';
 
 @eventManager.subscription({
-    sessionChanged: 'onSessionChanged'
+    userChanged: 'onUserChanged'
 })
 class SampleContainer extends React.Component {
     constructor() {
@@ -36,7 +36,7 @@ class SampleContainer extends React.Component {
         };
     }
 
-    onSessionChanged(userName) {
+    onUserChanged(userName) {
         this.setState({
             userName: userName
         });
@@ -57,7 +57,7 @@ To invoke a change:
 ```js
 import eventManager from 'react-eventmanager';
 
-eventManager.emit('sessionChanged', { userName: 'Eser Ozvataf' });
+eventManager.emit('userChanged', 'Eser Ozvataf');
 ```
 
 
