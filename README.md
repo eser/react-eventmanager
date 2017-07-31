@@ -18,7 +18,10 @@ Execute `npm install react-eventmanager` to install react-eventmanager and its d
 
 ## Usage
 
+To handle events in React view:
+
 ```js
+import * as React from 'react';
 import eventManager from 'react-eventmanager';
 
 @eventManager.subscription({
@@ -29,28 +32,32 @@ class SampleContainer extends React.Component {
         super();
 
         this.state = {
-            user: {
-                name: 'User-1'
-            }
+            userName: 'User-1'
         };
     }
 
-    onSessionChanged(user) {
-        console.log(user);
-
+    onSessionChanged(userName) {
         this.setState({
-            user: user
+            userName: userName
         });
     }
 
     render() {
         return (
             <div>
-                {this.state.user.name}
+                {this.state.userName}
             </div>
         );
     }
 }
+```
+
+To invoke a change:
+
+```js
+import eventManager from 'react-eventmanager';
+
+eventManager.emit('sessionChanged', { userName: 'Eser Ozvataf' });
 ```
 
 
