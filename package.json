@@ -1,0 +1,51 @@
+{
+  "name": "react-eventmanager",
+  "description": "An Event Manager implementation for React",
+  "keywords": [
+    "events",
+    "event",
+    "emitter",
+    "es6",
+    "react",
+    "state",
+    "manager",
+    "decorators"
+  ],
+  "version": "0.0.1",
+  "homepage": "",
+  "author": "Eser Ozvataf <eser@ozvataf.com>",
+  "contributors": [
+    {
+      "name": "Eser Ozvataf",
+      "email": "eser@ozvataf.com",
+      "url": "http://eser.ozvataf.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eserozvataf/react-eventmanager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eserozvataf/react-eventmanager/issues",
+    "email": "eser@ozvataf.com"
+  },
+  "license": "Apache-2.0",
+  "main": "./lib/index.js",
+  "module": "./lib/esm.js",
+  "types": "./lib/index.d.ts",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {},
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "bin": {},
+  "dependencies": {
+    "es6-eventemitter": "^0.8.4"
+  }
+}
