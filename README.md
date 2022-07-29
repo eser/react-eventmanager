@@ -6,6 +6,11 @@
 [![license][license-image]][license-url]
 
 
+## Update
+
+This project became redundant when React Hooks is introduced. So it's deprecated in favor of React's newer versions.
+
+
 ## What is the React-EventManager?
 
 React-EventManager is an alternative method of handling states on React views.
